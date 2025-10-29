@@ -1,23 +1,32 @@
-<!-- PROJECT LOGO -->
-<p align="center">
-  <img src="assets/logo.png" alt="Logo" width="100" height="100">
-</p>
+# 📝 PHP To-Do List  
 
-<h1 align="center">📝 PHP To-Do List Application</h1>
-
-<p align="center">
-  A clean and simple task management web app built with <b>PHP</b>, <b>MySQL</b>, and <b>HTML5</b>.  
-  <br />
-  <a href="https://github.com/SaumikLaha/-PHP-To-Do-List"><strong>Explore the docs »</strong></a>
-  <br />
-  <br />
-  💻 <a href="#demo">View Demo</a> •
-  ⚙️ <a href="#features">Features</a> •
-  🧠 <a href="#usage">Usage</a> •
-  📜 <a href="#license">License</a>
-</p>
+A simple and elegant **To-Do List web app** built using **PHP**, **HTML5**, **CSS**, and **MySQL**.  
+✅ Add, edit, delete and mark tasks as done — all with a clean, responsive UI.  
 
 ---
+
+## 🚀 Features  
+- ✨ Add new tasks with title & description  
+- 🖋️ Edit existing tasks  
+- ❌ Delete tasks  
+- ✅ Mark tasks as completed  
+- 🕓 Auto-timestamp for each entry  
+
+---
+
+## ⚙️ Setup Guide  
+1. Move this folder to your **XAMPP → htdocs** directory.  
+2. Open **phpMyAdmin** and create a database named `todo_project`.  
+3. Run the following SQL query:
+   ```sql
+   CREATE TABLE tasks (
+     id INT AUTO_INCREMENT PRIMARY KEY,
+     title VARCHAR(255) NOT NULL,
+     description TEXT,
+     is_done TINYINT(1) DEFAULT 0,
+     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+     updated_at TIMESTAMP NULL ON UPDATE CURRENT_TIMESTAMP
+   );
 
 ## 📘 Abstract
 This project is a simple **To-Do List Application** designed to help users manage their daily tasks efficiently.  
@@ -109,15 +118,19 @@ Mark tasks as completed using the Done checkbox
 
 ```
 ---
-## Homepage
+## 🏠 Homepage
 | Homepage |
-| <img src="assets/home.png" width="300"/> |
+|:--:|
+| <img src="assets/Screenshots/home.png" width="700"/>
+
 ---
 
 
 ## 🧑‍💻 Author
 👨‍💻 Saumik Laha
+
 📧 Email: saumiklaha@gmail.com
+
 ---
 
 
